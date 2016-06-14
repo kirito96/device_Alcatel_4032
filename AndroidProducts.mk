@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_4032.mk
+    $(LOCAL_DIR)/popC2.mk
