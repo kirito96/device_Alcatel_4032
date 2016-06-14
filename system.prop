@@ -1,0 +1,6 @@
+#
+# system.prop for Alcatel 4032
+#
+#ro.ctr.crypto.passwd="64656661756c745f70617373776f7264"
+ro.ctr.forbid_format=/persistent,/uboot,/logo,/nvram,/sec_ro,/mobile_info
+ro.ctr.forbid_mount=/persistent,/uboot,/logo,/nvram,/sec_ro,/mobile_info
