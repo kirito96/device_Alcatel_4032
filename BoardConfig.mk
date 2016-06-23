@@ -28,10 +28,10 @@ BOARD_MKBOOTIMG_ARGS := --base 0x10000000 --pagesize 2048 --kernel_offset 0x0000
 
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/boot.mk
 
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/mt_usb/gadget/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/gadget/lun%d/file
 DEVICE_SCREEN_WIDTH := 480
 DEVICE_SCREEN_HEIGHT := 800
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
+TARGET_RECOVERY_LCD_BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 RECOVERY_VARIANT := carliv
 
@@ -41,6 +41,7 @@ endif
 
 # CARLIV
 ifeq ($(RECOVERY_VARIANT),carliv)
+VIBRATOR_TIMEOUT_FILE := /sys/devices/virtual/timed_output/vibrator/enable
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_10x18.h\"
 DEVICE_RESOLUTION := 480x800
 BOARD_HAS_MTK_CPU := true
