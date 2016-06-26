@@ -24,9 +24,11 @@ TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-BOARD_MKBOOTIMG_ARGS := --base 0x10000000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100     
+BOARD_MKBOOTIMG_ARGS := --base 0x10000000 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --mtk 1    
 
-BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/boot.mk
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_MKBOOTIMG := mtkbootimg
+BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/bootimg.mk
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/gadget/lun%d/file
 DEVICE_SCREEN_WIDTH := 480

@@ -20,4 +20,4 @@
 /logo	emmc	/dev/logo
 /nvram	emmc	/dev/nvram
 /sec_ro	emmc	/dev/sec_ro
-/persistent	emmc	/dev/frp
+/persistent emmc /dev/frp

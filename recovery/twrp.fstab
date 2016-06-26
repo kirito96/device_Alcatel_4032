@@ -29,4 +29,4 @@
 #/misc       mtd         misc
 #/system     yaffs2      system
 #/sdcard     vfat        /dev/block/mmcblk0p1
-#/sd-ext     ext4        /dev/block/mmcblk0p2
+#/sd-ext ext4 /dev/block/mmcblk0p2
